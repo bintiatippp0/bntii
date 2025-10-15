@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binti Nur Latif — Profil</title>
+  <meta name="description" content="Profil singkat Binti Nur Latif — pelajar TKJ, web developer junior & penggemar jaringan.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Binti Nur Latif</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="toggleTheme" aria-pressed="false" class="theme-btn" title="Toggle accent">✨</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h2>Halo!! Saya <span class="accent">Binti Nur Latif</span></h2>
+          <p class="lead">Seorang pelajar yang menempuh pendidikan di bidang <strong>Teknik Komputer dan Jaringan (TKJ)</strong>. Saya berminat pada jaringan komputer, sistem informasi, dan pengembangan website.</p>
+
+
+          <ul class="hero-list">
+            <li>Mempelajari HTML, CSS, JavaScript, Python</li>
+            <li>Manajemen jaringan: Mikrotik &amp; Linux Debian</li>
+            <li>Penasaran, suka belajar, dan berorientasi hasil</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Lihat Proyek</a>
+            <a class="btn ghost" href="#contact">Hubungi</a>
+          </div>
+        </div>
+
+
+        <div class="hero-photo" aria-hidden="true">
+          <div class="photo-pink">
+            <div class="photo-circle">Atipp0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h3>Profil Singkat</h3>
+      <div class="about-text">
+        <p>Halo!! Saya Binti Nur Latif, seorang pelajar yang menempuh pendidikan di bidang Teknik Komputer dan Jaringan (TKJ).</p>
+        
+        <p>Saya memiliki minat besar terhadap dunia jaringan komputer, sistem informasi, dan pengembangan website. Saya aktif mengembangkan kemampuan di bidang web programming menggunakan bahasa seperti HTML, CSS, JavaScript, Python, serta mempelajari manajemen jaringan berbasis Mikrotik dan Linux Debian.</p>
+        
+        <p>Saya adalah tipe orang yang penasaran, suka belajar hal baru, dan berorientasi pada hasil. Saya senang ketika bisa memecahkan masalah — baik itu bug pada kode, kesalahan konfigurasi jaringan, maupun tantangan teknis lainnya. Dalam membuat sebuah website, saya tidak hanya berfokus pada fungsionalitas, tetapi juga tampilan yang menarik dan mudah digunakan (user friendly).</p>
+
+        <p>Saya memiliki cita-cita untuk menjadi web developer profesional yang juga memahami dasar-dasar jaringan komputer, sehingga mampu menciptakan sistem web yang stabil, aman, dan terintegrasi.</p>
+
+        <p>Saya ingin terus belajar dan berkembang, baik melalui proyek pribadi, pelatihan, maupun pengalaman kerja nyata di dunia teknologi.</p>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section id="vision" class="section alt container">
+      <h3>Visi &amp; Misi</h3>
+      <div class="vm-grid">
+        <div>
+           <h4>Visi</h4>
+           <p>Menjadi pelajar yang berkompeten dan kreatif di bidang teknologi informasi serta mampu menciptakan inovasi digital yang bermanfaat.</p>
+        </div>
+        <div>
+           <h4>Misi</h4>
+           <ol>
+            <li>Mengembangkan kemampuan coding dan jaringan komputer.</li>
+            <li>Membuat website yang efisien dan mudah digunakan.</li>
+            <li>Meningkatkan kemampuan problem solving dalam bidang IT.</li>
+            <li>Terus belajar dan beradaptasi dengan perkembangan teknologi.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h3>Daftar Proyek Website</h3>
+      <div class="projects-wrap">
+        <table class="projects-table" role="table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Proyek</th>
+              <th>Deskripsi</th>
+              <th>Teknologi</th>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>Kalkulator IP Subnet</td>
+              <td>Menghitung subnet mask, jumlah host, dan network address.</td>
+              <td>HTML, CSS, JavaScript</td>
+            </tr
+            <tr>
+              <td>To-Do List / Catatan Harian</td>
+              <td>Aplikasi pencatat tugas dan kegiatan harian.</td>
+              <td>HTML, CSS, JS</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Kalkulator BMI</td>
+              <td>Menghitung indeks massa tubuh dengan hasil kategori.</td>
+              <td>HTML, CSS, JS</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Catatan Keuangan Dan Target Tabungan</td>
+              <td>Mencatat pemasukan, pengeluaran, dan menghitung waktu tercapai target tabungan.</td>
+              <td>HTML, CSS, JS</td>
+             </tr>
+           </tbody>
+        </table>
+
+        <div class="projects-note">Tip: klik baris proyek untuk melihat detail (fitur demo di bawah).</div>
+      </div>
+            
+      <div id="projectDetail" class="project-detail" hidden>
+        <h4 id="pd-title"></h4>
+        <p id="pd-desc"></p>
+        <p><strong>Teknologi:</strong> <span id="pd-tech"></span></p>
+        <button id="closeDetail" class="btn ghost">Tutup</button>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h3>Keahlian (Skills)</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Teknis</h4>
+          <ul>
+            <li>HTML, CSS, JavaScript, Python</li>
+            <li>Mikrotik (IP Addressing, Bandwidth Management, DHCP)</li>
+            <li>Konfigurasi jaringan sederhana</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Non-Teknis</h4>
+          <ul>
+            <li>Disiplin &amp; tanggung jawab</li>
+            <li>Kerja sama tim</li>
+            <li>Kepemimpinan</li>
+            <li>Kreatif &amp; komunikatif</li>
+            <li>Problem solving</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt container">
+      <h3>Kontak</h3>
+      <div class="contact-grid">
+        <div>
+          <p>📧 Email: <button class="link-like" data-copy="bintinurlatif419@gmail.com">bintinurlatif419@gmail.com</button></p>
+          <p>📱 WhatsApp: <button class="link-like" data-copy="087803411502">087803411502</button></p>
+          <p>💼 GitHub: <a href="https://github.com/bintiatippp0" target="_blank" rel="noopener">github.com/bintiatippp0</a></p>
+          <p>🌐 Instagram: <a href="https://instagram.com/atipppcuyy" target="_blank" rel="noopener">@atipppcuyy</a></p>
+          <p> 📽️ TikTok: <href="https://www.tiktok.com/@bbablee4" target="_blank" rel="noopener">@bbablee4</a></p>
+        </div>
+                  
+        <form id="contactForm" class="contact-form" autocomplete="on">
+          <label>
+            Nama
+            <input name="name" type="text" required placeholder="Masukkan Namamu">
+          </label>
+          <label>
+            Email
+            <textarea name="email" type="text" required placeholder="Masukkan Alamat Email"></textarea>
+          </label>
+          <label>
+            Pesan
+            <textarea name="message" rows="5" required placeholder="Tulis Pesan Singkat..."></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Kirim</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Dibuat oleh Binti Nur Latif.</div>
+  </footer>
