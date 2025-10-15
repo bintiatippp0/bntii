@@ -91,6 +91,22 @@ body{
 .skills-grid{grid-template-columns:1fr}
 }
 
+/* Tema alternatif (gelap pink) */
+body.alt-theme {
+  background: linear-gradient(180deg, #2b0015 0%, #ffebf5 100%);
+  color: #fff0f7;
+}
+body.alt-theme .hero-card,
+body.alt-theme .contact-form,
+body.alt-theme .skill-card {
+  background: linear-gradient(180deg, #6b0140, #ff88c0);
+  color: white;
+}
+body.alt-theme a,
+body.alt-theme .link-like {
+  color: #fff;
+}
+
 
 /* small accessible focus */
 a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(255,77,137,0.18);outline-offset:3px}
