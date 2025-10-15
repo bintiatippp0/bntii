@@ -1,0 +1,96 @@
+:root{
+  --bg: #ffcfe4;
+  --card: #f198b6;
+  --pink-1: #fe76b5;
+  --pink-2: #e762a0;
+  --accent: #ff4d89;
+  --muted: #9f305e;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 14px;
+  --maxw: 1100px;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,var(--bg) 0%, #fff6fb 100%);
+  color:#5b3a46;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--maxw);margin:0 auto;padding:1rem}
+
+.site-header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));box-shadow:0 6px 18px rgba(255,77,137,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.6rem 1rem}
+.brand{font-size:1.1rem;margin:0;color:var(--accent)}
+.nav a{margin:0 0.5rem;text-decoration:none;color:var(--muted);font-weight:600}
+.nav a:hover{color:var(--accent)}
+.theme-btn{background:transparent;border:0;font-size:1.1rem;cursor:pointer}
+
+/* Hero */
+.hero{padding:2.2rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:1.2rem;align-items:center}
+.hero-card{background:linear-gradient(180deg,var(--card),rgba(255,241,247,0.9));padding:1.6rem;border-radius:var(--radius);box-shadow:0 10px 30px rgba(255,77,137,0.08);transform:translateX(-5%)}
+.hero-card h2{margin:0 0 0.4rem;font-size:1.6rem}
+.lead{margin:0 0 1rem;color:#6b4b56}
+.hero-list{margin:0 0 1rem 1rem}
+.hero-actions{display:flex;gap:0.6rem}
+
+
+.hero-photo{display:flex;justify-content:center}
+.photo-pink{width:320px;height:220px;border-radius:18px;background:linear-gradient(135deg,var(--pink-1),var(--pink-2));display:flex;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(255,77,137,0.12);position:relative;overflow:hidden}
+.photo-circle{width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:1.1rem}
+
+/* Sections */
+/* Projects table */
+.projects-wrap{overflow:auto}
+.projects-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.03)}
+.projects-table th, .projects-table td{padding:0.9rem 1rem;text-align:left;border-bottom:1px solid rgba(0,0,0,0.03)}
+.projects-table tbody tr{cursor:pointer}
+.projects-table tbody tr:hover{background:linear-gradient(90deg, rgba(255,244,248,0.8), rgba(255,248,250,0.95))}
+.projects-note{margin-top:0.6rem;color:var(--muted);font-size:0.95rem}
+
+
+.project-detail{margin-top:1rem;padding:1rem;border-radius:10px;background:var(--glass);border:1px solid rgba(255,77,137,0.08)}
+
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.skill-card{background:linear-gradient(180deg,#fff,#fff8fb);padding:1rem;border-radius:10px}
+
+
+/* Contact form */
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:1rem;align-items:start}
+.contact-form{background:var(--card);padding:1rem;border-radius:12px}
+.contact-form label{display:block;margin-bottom:0.6rem;font-weight:600}
+.contact-form input, .contact-form textarea{width:100%;padding:0.6rem;border:1px solid rgba(0,0,0,0.06);border-radius:8px}
+.form-actions{display:flex;gap:0.6rem;margin-top:0.6rem}
+
+
+/* Buttons */
+.btn{display:inline-block;padding:0.6rem 0.9rem;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);color:white}
+.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+.btn.primary:hover{filter:brightness(1.05)}
+
+
+.link-like{background:none;border:0;color:var(--accent);font-weight:700;cursor:pointer}
+
+
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);font-size:0.95rem}
+
+
+/* Responsive */
+@media (max-width:900px){
+.hero-grid{grid-template-columns:1fr}
+.hero-photo{order:-1}
+.contact-grid{grid-template-columns:1fr}
+.vm-grid{grid-template-columns:1fr}
+.skills-grid{grid-template-columns:1fr}
+}
+
+
+/* small accessible focus */
+a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(255,77,137,0.18);outline-offset:3px}
